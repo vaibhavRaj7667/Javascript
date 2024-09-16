@@ -14,7 +14,6 @@
 // my_num.unshift(11,45)
 // console.log(my_num)
 
-
 // const lol= my_num.map(Math.sqrt)
 // console.log(lol)
 
@@ -41,17 +40,17 @@
 //     console.log(element);
 // });
 
-const matrix =[[1,2,3],[1,2,3]];
+const matrix = [
+  [1, 2, 3],
+  [1, 2, 3],
+];
 
-for(let i=0;i<matrix.length;i++){
-    let row='';
-    for(let j=0;j<matrix[i].length;j++){
-        row+=matrix[i][j]+' ';
-    }
-    console.log(row.trim());
+for (let i = 0; i < matrix.length; i++) {
+  let row = "";
+  for (let j = 0; j < matrix[i].length; j++) {
+    row += matrix[i][j] + " ";
+  }
+  console.log(row.trim());
 }
 
-
-
-
-console.log(matrix[1][2]);  
+console.log(matrix[1][2]);

@@ -1,6 +1,4 @@
-
 // let day=7;
- 
 
 // switch(day){
 //     case 1:
@@ -33,3 +31,8 @@
 //     default:
 //         console.log(`${day} is not day`)
 // }
+//+++++++++++++++++++++++++++++++++++++++++++++++++ method chaining
+
+let username = window.prompt("ennter the username");
+username = username.trim();
+console.log(username);
