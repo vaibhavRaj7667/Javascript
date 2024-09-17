@@ -31,8 +31,10 @@
 //     default:
 //         console.log(`${day} is not day`)
 // }
-//+++++++++++++++++++++++++++++++++++++++++++++++++ method chaining
+//+++++++++++++++++++++++++++++++++++++++++++++++++
 
-let username = window.prompt("ennter the username");
-username = username.trim();
-console.log(username);
+// let username = window.prompt("ennter the username");
+// username = username.trim();
+// console.log(username);
+
+//------------------------------------------------------

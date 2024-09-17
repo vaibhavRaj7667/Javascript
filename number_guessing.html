@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const mini = 1;
+        const maxnum=10;
+
+        const answer = Math.floor(Math.random()*(maxnum - mini+1))
+        console.log(answer)
+
+        let attempt =0;
+        let running = true;
+        let guess;
+
+        while(running){
+            guess = window.prompt(`enter the number between ${mini}-${maxnum}`);
+            guess = Number(guess);
+    
+
+            if(isNaN(guess)){
+                window.alert("please enter the valid number");
+            }
+            else if(guess < mini || guess > maxnum){
+                window.alert("please enter the number in the given range");
+            }
+            else{
+                if(guess == answer){
+                    window.alert("you won")
+                }
+                else{
+                    window.alert("try later")
+                }
+            }
+
+            running = false;
+            
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
