@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const textbox = document.getElementById("textbox");
+            const tofar = document.getElementById("tofr");
+            const toce = document.getElementById("toce");
+            const results = document.getElementById("result");
+
+            function convert() {
+                let temperature = parseFloat(textbox.value);
+
+                if (tofar.checked) {
+                    let fahrenheit = (temperature * 9/5) + 32;
+                    results.textContent = `${temperature}°C is ${fahrenheit.toFixed(2)}°F`;
+                } else if (toce.checked) {
+                    let celsius = (temperature - 32) * 5/9;
+                    results.textContent = `${temperature}°F is ${celsius.toFixed(2)}°C`;
+                } else {
+                    results.textContent = "Select the unit";
+                }
+            }
+
+            document.querySelector('button').addEventListener('click', convert);
+        });
+
+    </script>
+</head>
+<body>
+    <h1>temprature converstion</h1>
+    <label for="textbox">temprature</label>
+    <input type="number" id="textbox" value="0"><br>
+
+    <input type="radio" id="tofr" name="unit">
+    <label for="tofr">C to F</label> <br>
+
+    <input type="radio" id="toce" name="unit">
+    <label for="toce">F to C</label><br>
+
+    <button type="button" onclick="convert()">submit</button>
+
+    <p id="result">select a unit</p>
+    
+    
+</body>
+</html>
