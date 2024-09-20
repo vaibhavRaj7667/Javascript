@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #conatiner{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            font-size: 2rem;
+        }
+        button{
+            font-size: 1.5rem;
+            padding: 10px 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: rgb(137, 137, 178);
+            color: white;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgb(104, 104, 135);
+        }
+        input{
+            font-size: 2rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="conatiner">
+        <h1>dice roller</h1>
+        <label># of dice</label>
+        <input type="number" id="number" value="1" min="1">
+        <button onclick="rolldice()">roll dice</button>
+        <div id="diceresult"></div>
+        <script src="dice.js"></script>
+    </div>
+</body>
+</html>
