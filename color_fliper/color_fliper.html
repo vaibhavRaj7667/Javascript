@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            text-align: center;
+            margin: 0;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        button {
+            margin-top: 20px;
+            border: none;
+            padding: 10px;
+            display: inline-block;
+            font-size: 16px;
+            color: white;
+            background-color: red;
+            border-radius: 10px;
+        }
+        button:active {
+            background-color: #d31f1f;
+            transform: translateY(4px);
+          }
+    </style>
+</head>
+<body>
+    <h1>Background color <span class="color">#f1f5f8</span></h1>
+    <button type="submit" id="btn">click me</button>
+    <script src="color_fliper.js"></script>
+</body>
+</html>

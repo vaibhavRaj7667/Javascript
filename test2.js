@@ -55,12 +55,15 @@
 // console.log(Math.floor(Math.random() * (max - min + 1)) + min);
 //++++++++++++++++++++Arrays
 
-const myarra = [5, 4, 3, 2, 1, 0];
-const myheros = ["a", "b", "c", "d"];
+// const myarra = [5, 4, 3, 2, 1, 0];
+// const myheros = ["a", "b", "c", "d"];
 
-// myarra.push(11);
-// myarra.pop();
+// // myarra.push(11);
+// // myarra.pop();
 
-console.log(myarra.includes(33));
+// console.log(myarra.includes(33));
 
-console.log(myarra);
+// console.log(myarra);
+//+++++++++++++++++++++++++++++++++++++++++ day9.js
+const text = document.querySelector("#yoyo");
+text.textContent = "haaaah";
