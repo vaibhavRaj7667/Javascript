@@ -7,14 +7,16 @@ const my = {
 const { admission_no: bro } = my;
 console.log(bro);
 
-let total=0;
-function add(...give){
-  for(let i=0;i<arguments.length;i++){
+let total = 0;
+function add(...give) {
+  for (let i = 0; i < arguments.length; i++) {
     total += give[i];
   }
-
 }
-add(5,5,5,5,5,5)
+add(5, 5, 5, 5, 5, 5);
 
-console.log(total)
+console.log(total);
 
+//
+let vaibhav = (a, b) => a * b;
+console.log(vaibhav(5, 5));
