@@ -65,5 +65,10 @@
 
 // console.log(myarra);
 //+++++++++++++++++++++++++++++++++++++++++ day9.js
-const text = document.querySelector("#yoyo");
-text.textContent = "haaaah";
+const text = document.getElementById('text');
+const btn = document.getElementById('btn');
+
+btn.addEventListener('click', function(){
+    text.textContent ='now its chnaged';
+} )
+
