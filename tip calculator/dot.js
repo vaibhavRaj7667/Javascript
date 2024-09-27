@@ -4,6 +4,7 @@ const tip = document.getElementById('tip')
 const btn = document.getElementById('btn')
 const result = document.getElementById('result')
 
+
 btn.addEventListener('click', function() {
     const amountValue = parseFloat(amount.value);
     const tipValue = parseFloat(tip.value);
