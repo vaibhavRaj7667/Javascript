@@ -9,8 +9,8 @@ btn.addEventListener('click', function() {
     const tipValue = parseFloat(tip.value);
 
     if (!isNaN(amountValue) && !isNaN(tipValue)) {  
-        const answer = (amountValue * tipValue) / 100;
-        result.textContent = `$${answer.toFixed(2)}`;  
+        const answer = ((amountValue * tipValue) / 100)+amountValue;
+        result.textContent = `$${answer}`;  
     } else {
         result.textContent = 'Please enter valid numbers!';  
     }
